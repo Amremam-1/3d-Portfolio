@@ -1,3 +1,19 @@
+import {
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiFirebase,
+  SiRedux,
+  SiChakraui,
+  SiReactquery,
+} from "react-icons/si"
+import { FaSass } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa6"
+import { FaGithub } from "react-icons/fa"
+import { FaFacebook } from "react-icons/fa"
+import { IoLogoWhatsapp } from "react-icons/io5"
+
 const navLinks = [
   {
     name: "Work",
@@ -123,38 +139,26 @@ const expLogos = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-    link: "",
+    name: "Linkedin",
+    imgPath: FaLinkedin,
+    link: "https://www.linkedin.com/in/amr-emam-0558b4246/",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-    link: "",
+    name: "Github",
+    imgPath: FaGithub,
+    link: "https://github.com/Amremam-1",
   },
   {
-    name: "x",
-    imgPath: "/images/x.png",
-    link: "",
+    name: "Facebook",
+    imgPath: FaFacebook,
+    link: "https://www.facebook.com/amr.emam.335602/",
   },
   {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
-    link: "",
+    name: "Whatsapp",
+    imgPath: IoLogoWhatsapp,
+    link: "https://api.whatsapp.com/send/?phone=201065621168&text&type=phone_number&app_absent=0",
   },
 ]
-
-import {
-  SiReact,
-  SiTypescript,
-  SiTailwindcss,
-  SiNextdotjs,
-  SiFirebase,
-  SiRedux,
-  SiChakraui,
-  SiReactquery,
-} from "react-icons/si"
-import { FaSass } from "react-icons/fa"
 
 const mainProject = {
   title: "Nestretto Coffee",

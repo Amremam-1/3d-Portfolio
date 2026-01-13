@@ -15,7 +15,7 @@ const Footer = () => {
               target="_blank"
               className="icon"
             >
-              <img src={icon.imgPath} alt={icon.name} />
+              <icon.imgPath src={icon.imgPath} alt={icon.name} size={20} />
             </a>
           ))}
         </div>
