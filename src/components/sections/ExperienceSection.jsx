@@ -37,7 +37,7 @@ const ExperienceSection = () => {
 
                     <div className="flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="time-line-logo rounded-full p-3 w-20 h-19 flex items-center justify-center bg-[#0f172a]">
-                        <img src={card.logoPath} alt="logo" />
+                        <img src={card.logoPath} alt="logo" loading="lazy"/>
                       </div>
 
                       <div>
