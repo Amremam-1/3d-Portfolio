@@ -125,18 +125,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    link: "",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    link: "",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "",
   },
 ]
 
