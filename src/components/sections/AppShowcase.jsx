@@ -2,55 +2,10 @@ import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { SiReact, SiTypescript, SiTailwindcss } from "react-icons/si"
-import { SiNextdotjs } from "react-icons/si"
-import { FaSass } from "react-icons/fa"
-import { SiFirebase } from "react-icons/si"
-import { SiRedux } from "react-icons/si"
-import { SiChakraui } from "react-icons/si"
-import { SiReactquery } from "react-icons/si"
 import { FiArrowRight } from "react-icons/fi"
+import { mainProject, otherProjects } from "../../constants"
 
 gsap.registerPlugin(ScrollTrigger)
-
-// البيانات
-const mainProject = {
-  title: "Nestretto Coffee",
-  description:
-    "An App built with React.js for a fast, user-friendly experience",
-  image: "/images/project1.jpeg",
-  alt: "Nestretto Coffee",
-  tools: [
-    <SiReact key="react" />,
-    <FaSass key="sass" />,
-    <SiFirebase key="firebase" />,
-    <SiRedux key="redux" />,
-  ],
-  liveLink: "https://nestrettocoffee.com/",
-}
-
-const otherProjects = [
-  {
-    title: "Video Games Explorer",
-    image: "/images/2.jpg",
-    alt: "Video Games Explorer",
-    tools: [
-      <SiNextdotjs key="next" />,
-      <SiTypescript key="ts" />,
-      <SiTailwindcss key="Tailwindcss" />,
-      <SiChakraui key="Chakraui" />,
-      <SiReactquery key="Reactquery" />,
-    ],
-    liveLink: "https://gamevortex.netlify.app/",
-  },
-  {
-    title: "OpenWeather Forecast",
-    image: "/images/dd.png",
-    alt: "OpenWeather Forecast",
-    tools: [<SiNextdotjs key="next" />, <SiTailwindcss key="Tailwindcss" />],
-    liveLink: "https://weather-app-blush-psi-75.vercel.app/",
-  },
-]
 
 const AppShowcase = () => {
   const sectionRef = useRef(null)
@@ -128,7 +83,9 @@ const AppShowcase = () => {
               <div className="flex items-center justify-between">
                 <h2>{mainProject.title}</h2>
                 <div className="flex gap-2 mt-2 text-xl text-white">
-                  {mainProject.tools.map((icon) => icon)}
+                  {mainProject.tools.map((Icon, idx) => (
+                    <Icon key={idx} />
+                  ))}
                 </div>
               </div>
               <p className="text-white-50 md:text-xl">
@@ -146,7 +103,7 @@ const AppShowcase = () => {
                 className="project relative group"
               >
                 <div className="image-wrapper bg-[#ffefdb] cursor-pointer relative overflow-hidden">
-                  <img src={project.image} alt={project.alt} />
+                  <img src={project.image} alt={project.alt} loading="lazy" />
                   {project.liveLink && (
                     <a
                       href={project.liveLink}
@@ -162,7 +119,9 @@ const AppShowcase = () => {
                 <div className="flex items-center justify-between flex-wrap mt-2">
                   <p>{project.title}</p>
                   <p className="flex gap-2 mt-2 text-xl text-white">
-                    {project.tools.map((icon) => icon)}
+                    {project.tools.map((Icon, idx) => (
+                      <Icon key={idx} />
+                    ))}
                   </p>
                 </div>
               </div>

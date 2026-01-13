@@ -144,6 +144,45 @@ const socialImgs = [
   },
 ]
 
+import {
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiFirebase,
+  SiRedux,
+  SiChakraui,
+  SiReactquery,
+} from "react-icons/si"
+import { FaSass } from "react-icons/fa"
+
+const mainProject = {
+  title: "Nestretto Coffee",
+  description:
+    "An App built with React.js for a fast, user-friendly experience",
+  image: "/images/project1.jpeg",
+  alt: "Nestretto Coffee",
+  tools: [SiReact, FaSass, SiFirebase, SiRedux],
+  liveLink: "https://nestrettocoffee.com/",
+}
+
+const otherProjects = [
+  {
+    title: "Video Games Explorer",
+    image: "/images/2.jpg",
+    alt: "Video Games Explorer",
+    tools: [SiNextdotjs, SiTypescript, SiTailwindcss, SiChakraui, SiReactquery],
+    liveLink: "https://gamevortex.netlify.app/",
+  },
+  {
+    title: "OpenWeather Forecast",
+    image: "/images/dd.png",
+    alt: "OpenWeather Forecast",
+    tools: [SiNextdotjs, SiTailwindcss],
+    liveLink: "https://weather-app-blush-psi-75.vercel.app/",
+  },
+]
+
 export {
   counterItems,
   words,
@@ -153,4 +192,6 @@ export {
   socialImgs,
   navLinks,
   iconSkills,
+  mainProject,
+  otherProjects,
 }
