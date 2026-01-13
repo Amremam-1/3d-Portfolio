@@ -20,13 +20,14 @@ const TechStack = () => {
         },
       }
     )
-  })
+  }, [])
+
   return (
     <div id="skills" className="flex-center section-padding">
       <div className="tech-card w-full h-full md:px-10 px-5">
         <TitleHeader
           title="My Preferred Tech Stack"
-          sub="🤝 The Skills I Bring to the Tabel"
+          sub="🤝 The Skills I Bring to the Table"
         />
 
         <div className="w-full overflow-hidden mt-20">
@@ -36,7 +37,7 @@ const TechStack = () => {
                 key={idx}
                 src={iconImg.imgPath}
                 alt="icon-skill"
-                className=""
+                loading="lazy"
               />
             ))}
           </div>
